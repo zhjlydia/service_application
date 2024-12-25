@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function ($scope) {
+  var c = this;
+  c.loading = false;
+
+  c.options = [
+    { value: "option1", label: "Option 1" },
+    { value: "option2", label: "Option 2" },
+    { value: "option3", label: "Option 3" },
+  ];
+
+  // Initialize the selected option
+  c.selectedOption = c.options[0].value;
+
+  c.formatPresenceList = function (originList, serviceChannelList) {
+    return originList.map(function(item) {
+      return {
+        sysId:item.sysId,
+				name:item.name,
+        serviceChannels: (item.serviceChannels?item.serviceChannels.split(",")
+          : []
+        ).map(function(channel) {
+          return {
+            name: serviceChannelList.find(
+              function(serviceChannel){ return serviceChannel.sysId === channel}
+            ).name,
+            sysId: channel,
+          };
+        }),
+      };
+    });
+  };
+	
+	c.syncPresence=function(){
+		c.data.presenceSyncConfig={sysId:c.presenceSyncConfig.sysId};
+		c.server.update()
+	}
+
+  c.loadData = function () {
+    c.server.get({ load: true }).then(function (response) {
+      c.serviceChannelList = response.data.serviceChannelList;
+      c.presenceList = c.formatPresenceList(
+        response.data.presenceList,
+        response.data.serviceChannelList
+      );
+      c.presenceSyncConfig = response.data.presenceSyncConfig;
+
+      c.loading = false;
+    });
+  };
+  c.loadData();
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.presence-item{
+  display:flex;
+  margin-bottom:10px;
+}
+.presence-item-name{
+  width:300px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>ringcx_presence_sync</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>RingCX Presence Sync</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+
+  function getPresenceList() {
+    var presenceGR = new GlideRecord("awa_presence_state");
+    presenceGR.query();
+
+    var presenceList = [];
+
+    while (presenceGR.next()) {
+      presenceList.push({
+        name: presenceGR.getValue("name"),
+        sysId: presenceGR.getValue("sys_id"),
+		    serviceChannels:presenceGR.getValue("service_channels"),
+      });
+    }
+    data.presenceList = presenceList;
+  }
+
+    function getServiceChannelList() {
+    var serviceChannelGR = new GlideRecord("awa_service_channel");
+    serviceChannelGR.query();
+
+    var serviceChannelList = [];
+
+    while (serviceChannelGR.next()) {
+      serviceChannelList.push({
+        name: serviceChannelGR.getValue("name"),
+        sysId: serviceChannelGR.getValue("sys_id"),
+      });
+    }
+    data.serviceChannelList = serviceChannelList;
+  }
+
+  function getPresenceSyncConfiguration() {
+    var presenceSyncConfigGR = new GlideRecord("u_rcx_custom_configuration");
+    presenceSyncConfigGR.query();
+
+    if (presenceSyncConfigGR.next()) {
+      data.presenceSyncConfig = {sysId:presenceSyncConfigGR.getValue(
+        "sys_id"),config:presenceSyncConfigGR.getValue(
+        "u_presence_sync_config")
+																}
+
+    }
+  }
+
+  function init() {
+    getPresenceList();
+    getPresenceSyncConfiguration();
+	  getServiceChannelList();
+  }
+
+	function save(presenceSyncConfig){
+		var presenceSyncConfigGR = new GlideRecord("u_rcx_custom_configuration");
+    presenceSyncConfigGR.get(presenceSyncConfig.sysId);
+		 gs.info('Record is closed: ' + presenceSyncConfigGR);
+		presenceSyncConfigGR.setValue('u_presence_sync_config','77777hhh');
+		presenceSyncConfigGR.update();
+	}
+
+if(input && input.load){
+	init();
+}
+			 gs.info('input: ' + JSON.stringify(input));
+	if(input && input.presenceSyncConfig){
+		
+		save(input.presenceSyncConfig);
+	}
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:36:30</sys_created_on>
+        <sys_id>54d735bf83e25e10af36e7d0deaad32f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RingCX Presence Sync</sys_name>
+        <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_update_name>sp_widget_54d735bf83e25e10af36e7d0deaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 08:05:21</sys_updated_on>
+        <template><![CDATA[<div class="presence-sync-container">
+  <p>
+    {{c.presenceSyncConfig.config}}
+  </p>
+  <div ng-if="c.loading">Loading...</div>
+  <div ng-if="!c.loading">
+    <div ng-repeat="presence in c.presenceList">
+      <div class="presence-item" ng-if="!presence.serviceChannels.length">
+        <div class="presence-item-name">{{presence.name}}</div>
+        <div class="presence-item-select">
+          <select class="form-control" ng-model="c.selectedOption">
+            <option
+              ng-repeat="option in c.options"
+              value="{{option.value}}"
+            >
+              {{option.label}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div ng-else>
+        <div
+          ng-repeat="channel in presence.serviceChannels"
+          class="presence-item"
+        >
+          <div class="presence-item-name">
+            {{presence.name}} for {{channel.name}}
+          </div>
+          <div class="presence-item-select">
+            <select class="form-control" ng-model="c.selectedOption">
+              <option
+                ng-repeat="option in c.options"
+                value="{{option.value}}"
+              >
+                {{option.label}}
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="presence-sync-button">
+    <button
+      class="btn btn-primary"
+      ng-click="c.syncPresence()"
+    >
+      Sync
+    </button>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
