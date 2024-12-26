@@ -73,7 +73,7 @@
         <name>RingCX Presence Sync</name>
         <option_schema/>
         <public>false</public>
-        <roles/>
+        <roles>ringcx_admin</roles>
         <script><![CDATA[(function () {
 
   function getPresenceList() {
@@ -150,14 +150,14 @@ if(input && input.load){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-25 07:36:30</sys_created_on>
         <sys_id>54d735bf83e25e10af36e7d0deaad32f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>RingCX Presence Sync</sys_name>
         <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
         <sys_policy/>
         <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
         <sys_update_name>sp_widget_54d735bf83e25e10af36e7d0deaad32f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 08:05:21</sys_updated_on>
+        <sys_updated_on>2024-12-26 01:34:30</sys_updated_on>
         <template><![CDATA[<div class="presence-sync-container">
   <p>
     {{c.presenceSyncConfig.config}}
