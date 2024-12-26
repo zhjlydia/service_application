@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e7fd6a79832ad210af36e7d0deaad3f1" label="RCX Custom Configuration" max_length="40" name="u_rcx_custom_configuration" type="collection">
+        <element label="Presence Sync Config" max_length="1000" name="u_presence_sync_config" type="string"/>
+    </element>
+</database>

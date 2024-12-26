@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">cf749e4483ba9e10af36e7d0deaad31e</sp_column>
+        <sp_widget display_value="Catalog Checkout">1efb954a7f900300688e91679ffa91f8</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-26 04:47:26</sys_created_on>
+        <sys_id>99bade4c83ba9e10af36e7d0deaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_update_name>sp_instance_99bade4c83ba9e10af36e7d0deaad398</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-26 04:47:26</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=99bade4c83ba9e10af36e7d0deaad398"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</application>
+        <file_path/>
+        <instance_id>8fb324f91b32f51052a243f4bd4bcb58</instance_id>
+        <instance_name>dev228484</instance_name>
+        <name>sp_instance_99bade4c83ba9e10af36e7d0deaad398</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">cf749e4483ba9e10af36e7d0deaad31e</sp_column><sp_widget display_value="Catalog Checkout">1efb954a7f900300688e91679ffa91f8</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-26 04:47:26</sys_created_on><sys_id>99bade4c83ba9e10af36e7d0deaad398</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package><sys_policy/><sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope><sys_update_name>sp_instance_99bade4c83ba9e10af36e7d0deaad398</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-26 04:47:26</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=99bade4c83ba9e10af36e7d0deaad398"/></record_update>]]></payload>
+        <payload_hash>-1527642602</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>387e48e8d9b13110cedf7dffddb48f09</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-26 04:47:26</sys_created_on>
+        <sys_id>11bade4c83ba9e10af36e7d0deaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194014a7cdc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-26 04:47:26</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>15bade4c0fba9e10df4aea846aa3d99a</update_guid>
+        <update_guid_history>15bade4c0fba9e10df4aea846aa3d99a:-1527642602</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">49da9a4c83ba9e10af36e7d0deaad313</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-26 04:47:58</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>3e3db863d41745edba95b8cc1f647df9</sys_id>
+        <sys_metadata>99bade4c83ba9e10af36e7d0deaad398</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_scope_delete display_value="">9205d5d0a8f348e6954b03dab55dc404</sys_scope_delete>
+        <sys_update_name>sp_instance_99bade4c83ba9e10af36e7d0deaad398</sys_update_name>
+        <sys_update_version display_value="sp_instance_99bade4c83ba9e10af36e7d0deaad398">11bade4c83ba9e10af36e7d0deaad39b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-26 04:47:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-19 06:26:09</sys_created_on>
+        <sys_id>172e6e79832ad210af36e7d0deaad3cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_rcx_custom_configuration.u_rcx_custom_configuration_user</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_security_acl display_value="u_rcx_custom_configuration">1b2e6e79832ad210af36e7d0deaad3c5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:29:57</sys_updated_on>
+        <sys_user_role display_value="u_rcx_custom_configuration_user" name="u_rcx_custom_configuration_user">0b2e2e75832ad210af36e7d0deaad3ce</sys_user_role>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</claim_owner_scope>
+        <claim_timestamp>193fcb8e92f0000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>RingCX integration global</previous_claim_name>
+        <previous_claim_scope>771531fb83e25e10af36e7d0deaad351</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:29:57</sys_created_on>
+        <sys_id>5c56fd3f83e25e10af36e7d0deaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:29:57</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</application>
+        <file_path/>
+        <instance_id>8fb324f91b32f51052a243f4bd4bcb58</instance_id>
+        <instance_name>dev228484</instance_name>
+        <name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-19 06:26:09</sys_created_on><sys_id>172e6e79832ad210af36e7d0deaad3cb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>u_rcx_custom_configuration.u_rcx_custom_configuration_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope><sys_security_acl display_value="u_rcx_custom_configuration">1b2e6e79832ad210af36e7d0deaad3c5</sys_security_acl><sys_update_name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 07:29:57</sys_updated_on><sys_user_role display_value="u_rcx_custom_configuration_user" name="u_rcx_custom_configuration_user">0b2e2e75832ad210af36e7d0deaad3ce</sys_user_role></sys_security_acl_role><sys_claim action="INSERT_OR_UPDATE"><claim_owner_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</claim_owner_scope><claim_timestamp>193fcb8e92f0000001</claim_timestamp><metadata_update_name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</metadata_update_name><previous_claim_app_version>1.0.0</previous_claim_app_version><previous_claim_name>RingCX integration global</previous_claim_name><previous_claim_scope>771531fb83e25e10af36e7d0deaad351</previous_claim_scope><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-25 07:29:57</sys_created_on><sys_id>5c56fd3f83e25e10af36e7d0deaad32c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 07:29:57</sys_updated_on></sys_claim></record_update>]]></payload>
+        <payload_hash>-498093618</payload_hash>
+        <record_name>u_rcx_custom_configuration.u_rcx_custom_configuration_user</record_name>
+        <reverted_from/>
+        <source>387e48e8d9b13110cedf7dffddb48f09</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:29:57</sys_created_on>
+        <sys_id>9c56317f83e25e10af36e7d0deaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193fcb8e9660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:29:57</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>1456317f2ee25e1059fdf8c179d84168</update_guid>
+        <update_guid_history>1456317f2ee25e1059fdf8c179d84168:-498093618,df2e6e79562ad210efe72beb0f22efce:734036784</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="u_rcx_custom_configuration.u_rcx_custom_configuration_user">127cf97783265e10af36e7d0deaad39b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:56:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>39f407faf76849d8932b4e08e97b6c40</sys_id>
+        <sys_metadata>172e6e79832ad210af36e7d0deaad3cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_rcx_custom_configuration.u_rcx_custom_configuration_user</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent display_value="u_rcx_custom_configuration">1b2e6e79832ad210af36e7d0deaad3c5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_scope_delete display_value="">9205d5d0a8f348e6954b03dab55dc404</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_172e6e79832ad210af36e7d0deaad3cb">9c56317f83e25e10af36e7d0deaad368</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:56:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

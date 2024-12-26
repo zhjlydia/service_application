@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_presence_sync_config" table="u_rcx_custom_configuration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_map" table="u_test">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Presence Sync Config</column_label>
+        <column_label>map</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,21 +21,21 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_presence_sync_config</element>
+        <element>u_map</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="">data_structure</internal_type>
         <mandatory>false</mandatory>
-        <max_length>1000</max_length>
-        <name>u_rcx_custom_configuration</name>
+        <max_length>800</max_length>
+        <name>u_test</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-12-25 08:43:10</sys_created_on>
-        <sys_name>Presence Sync Config</sys_name>
+        <sys_created_on>2024-12-26 05:20:20</sys_created_on>
+        <sys_name>map</sys_name>
         <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
         <sys_policy/>
         <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
-        <sys_update_name>sys_dictionary_u_rcx_custom_configuration_u_presence_sync_config</sys_update_name>
+        <sys_update_name>sys_dictionary_u_test_u_map</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-25 08:43:10</sys_updated_on>
+        <sys_updated_on>2024-12-26 06:50:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

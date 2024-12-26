@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="RingCX integration global">1575b5fb83e25e10af36e7d0deaad32f</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_rcx_custom_configuration</name>
+        <order>2</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:26:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19757dfb83e25e10af36e7d0deaad31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_update_name>sys_app_module_19757dfb83e25e10af36e7d0deaad31d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:26:11</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</application>
+        <file_path/>
+        <instance_id>8fb324f91b32f51052a243f4bd4bcb58</instance_id>
+        <instance_name>dev228484</instance_name>
+        <name>sys_app_module_19757dfb83e25e10af36e7d0deaad31d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="RingCX integration global">1575b5fb83e25e10af36e7d0deaad32f</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_rcx_custom_configuration</name><order>2</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-25 07:26:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>19757dfb83e25e10af36e7d0deaad31d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package><sys_policy/><sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope><sys_update_name>sys_app_module_19757dfb83e25e10af36e7d0deaad31d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 07:26:11</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1601256797</payload_hash>
+        <record_name>Create New</record_name>
+        <reverted_from/>
+        <source>387e48e8d9b13110cedf7dffddb48f09</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:26:11</sys_created_on>
+        <sys_id>59757dfb83e25e10af36e7d0deaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193fcb579d80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:26:11</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5d757dfb1ee25e108e78d90e8e1c271e</update_guid>
+        <update_guid_history>5d757dfb1ee25e108e78d90e8e1c271e:-1601256797</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create New">6df5f53f83e25e10af36e7d0deaad3b8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 07:28:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>8846d2f4bd11475a9eb96fcf141c3484</sys_id>
+        <sys_metadata>19757dfb83e25e10af36e7d0deaad31d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_package display_value="RingCX integration global" source="771531fb83e25e10af36e7d0deaad351">771531fb83e25e10af36e7d0deaad351</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="RingCX integration global">771531fb83e25e10af36e7d0deaad351</sys_scope>
+        <sys_scope_delete display_value="">9205d5d0a8f348e6954b03dab55dc404</sys_scope_delete>
+        <sys_update_name>sys_app_module_19757dfb83e25e10af36e7d0deaad31d</sys_update_name>
+        <sys_update_version display_value="sys_app_module_19757dfb83e25e10af36e7d0deaad31d">59757dfb83e25e10af36e7d0deaad31f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 07:28:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
